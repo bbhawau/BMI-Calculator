@@ -41,13 +41,20 @@ class _HomePageState extends State<HomePage> {
             children: [
               //Height
               Container(
-                child: TextField(
-                    controller: heightController,
-                    keyboardType: TextInputType.number,
-                    decoration: InputDecoration(
-                      labelText: 'Height (cm)',
-                      border: OutlineInputBorder(),
-                    )),
+                child: Row(
+                  children: [
+                    TextField(
+                        controller: heightController,
+                        keyboardType: TextInputType.number,
+                        decoration: InputDecoration(
+                          labelText: 'Height (cm)',
+                          border: OutlineInputBorder(),
+                        )),
+                        TextField(
+                          
+                        )
+                  ],
+                ),
               ),
               const SizedBox(
                 height: 20,
